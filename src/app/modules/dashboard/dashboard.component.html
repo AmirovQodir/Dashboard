@@ -1,0 +1,36 @@
+<div>
+    <app-widget-area [data]="bigChart" ></app-widget-area>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    <mat-card fxFlex="25">
+        <app-widget-card label="user" total="18k" percentage="50%" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="Qodir" total="12k" percentage="75%" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="New user" total="9k" percentage="30%" [data]="cards"></app-widget-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <app-widget-card label="Shohruh" total="7k" percentage="25%" [data]="cards"></app-widget-card>
+    </mat-card>
+
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="60">
+        <app-widget-table></app-widget-table>
+    </div>
+    <div fxFlex="40">
+        <app-widget-pie [data]="pieChart">  
+        </app-widget-pie>
+    </div>
+</div>
